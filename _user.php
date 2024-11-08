@@ -148,5 +148,46 @@
             }
             return 0;
         }
+
+        public function user_ha_recensito($file){
+            $recensioni_database = json_decode(file_get_contents($file), true);
+            $recensione_esistente = false;
+            foreach($recensioni_database as $key => $recensione){
+                if($recensione['Username'] == $this->get_username()){
+                    $recensione_esistente = true;
+                }
+            }
+            return $recensione_esistente;
+        }
+
+        public function user_elimina_recensione($file, $titolo){
+            $recensioni_database = json_decode(file_get_contents($file), true);
+            foreach($recensioni_database as $key => $recensione){
+                if($this->get_username() == $recensione['Username'] && $recensione['Titolo del libro'] == $titolo){
+                    unset($recensioni_database[$key]);
+                }
+            }
+            file_put_contents($file, json_encode($recensioni_database));
+        }
+
+        private function user_exist_recensione($file, $titolo){
+            $recensioni_database = json_decode(file_get_contents($file), true);
+            foreach($recensioni_database as $key => $recensione){
+                if($this->get_username() == $recensione['Username'] && $recensione['Titolo del libro'] == $titolo){
+                    return 1;
+                }
+            }
+            return 0;
+        }
+
+        public function user_aggiungi_recensione($file, $titolo, $autore, $valutazione, $recensione){
+            $recensioni_database = json_decode(file_get_contents($file), true);
+            if(!$this->user_exist_recensione($file, $titolo)){
+                array_push($recensioni_database, ['Username' => $this->get_username(), 'Titolo del libro' => $titolo, 'Autore' => $autore, 'Valutazione' => $valutazione, 'Recensione' => $recensione]);
+                file_put_contents($file, json_encode($recensioni_database));
+            } else {
+                return 0;
+            }
+        }
     }
 ?>

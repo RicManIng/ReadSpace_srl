@@ -1,0 +1,181 @@
+@import 'configParam';
+@import 'standard';
+
+main{
+    background-image: url('../img/library-7408106_1920.jpg');
+    min-height: 90vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    section{
+        width: 80%;
+        max-width: 800px;
+        background-color: $mieRecensioni_bgColor;
+        padding: 40px;
+        border-radius: 20px;
+        
+        form.inserisci{
+            display: flex;
+            flex-direction: column;
+            
+            .rating {
+                display: flex;
+                gap: 5px;
+
+                .ball {
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    background-color: $mieRecensioni_activeBallColor;
+                    cursor: pointer;
+                    display: inline-block;
+                }
+                
+                input[type="radio"] {
+                    display: none;
+                }
+                
+                input[type="radio"]:checked + label.ball {
+                    background-color: $mieRecensioni_activeBallColor;
+                }
+                
+                input[type="radio"]:checked + label.ball ~ label.ball {
+                    background-color: $mieRecensioni_activeBallColor;
+                }
+                
+                input[type="radio"]:checked + label.ball ~ input[type="radio"] + label.ball {
+                    background-color: $mieRecensioni_inactiveBallColor;
+                }
+            }
+
+            h1{
+                text-align: center;
+                color: $txt_stdColor;   
+            }
+
+            label{
+                font-size: 1.5rem;
+                font-family: $txt_family;
+                color: $txt_stdColor;
+            }
+
+            .label{
+                margin-top: 20px;
+            }
+
+            .val{
+                margin-bottom:5px;
+            }
+
+            input[type="text"], textarea{
+                background-color: rgb(38, 0, 0);
+                color: rgb(255, 202, 202);
+                padding: 15px;
+                border-radius: 10px;
+            }
+
+            textarea{
+                height: 20vh;
+            }
+
+            input[type="submit"]{
+                padding: 15px;
+                text-align: center;
+                width: 40%;
+                border-radius: 10px;
+                background-color: $btn_colorUnpressed;
+                font-size: 1.2rem;
+                margin: 0 auto; 
+                margin-top: 20px;
+
+                &:hover{
+                    background-color: $btn_colorPressed;
+                    color: $main_bgColor;
+                }
+            }
+        }
+
+
+    }
+
+    .first{
+        margin: 10vh 0px;
+    }
+
+    .last{
+        margin-bottom: 10vh;
+        display: flex;
+        flex-direction: column;
+        background-color: $mieRecensioni_bgColor;
+        padding: 40px;
+        border-radius: 20px;
+
+        h1{
+            text-align: center;
+            margin-bottom: 10vh;
+        }
+
+        h1, h2, p{
+            color: $txt_stdColor;
+        }
+
+        p{
+            font-size: 1.2rem;
+        }
+
+        .valutazione-container{
+            display: flex;
+            gap: 10px;
+
+            .container{
+                display: flex;
+                align-items: center;
+                gap:5px;
+                .sfera{
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    background-color: $mieRecensioni_activeBallColor;
+                }
+            }
+        }
+
+        .recensione{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            border-bottom: 1px solid $txt_stdColor;
+            margin-top: 20px;
+
+            form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                input[type="submit"] {
+                    padding: 15px;
+                    text-align: center;
+                    width: 40%;
+                    border-radius: 10px;
+                    background-color: $btn_colorUnpressed;
+                    font-size: 1.2rem;
+                    margin: 20px 0px;
+
+                    &:hover {
+                        background-color: $btn_colorPressed;
+                        color: $main_bgColor;
+                    }
+                }
+            }
+        }
+
+        .recensione:last-child{
+            border-bottom: none;
+        }
+    }
+}
