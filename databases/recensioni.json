@@ -1,0 +1,72 @@
+[
+    {
+        "Titolo del libro": "Il nome della rosa",
+        "Autore": "Umberto Eco",
+        "Username": "lettore_mistero23",
+        "Valutazione": 5,
+        "Recensione": "Un romanzo storico straordinario che fonde mistero e filosofia medievale. Una lettura imperdibile per gli amanti del genere."
+    },
+    {
+        "Titolo del libro": "Cecità",
+        "Autore": "José Saramago",
+        "Username": "booklover84",
+        "Valutazione": 4,
+        "Recensione": "Un viaggio inquietante che mostra quanto fragile sia la società. Il linguaggio unico di Saramago richiede attenzione, ma ne vale la pena."
+    },
+    {
+        "Titolo del libro": "Il gattopardo",
+        "Autore": "Giuseppe Tomasi di Lampedusa",
+        "Username": "siciliano_doc",
+        "Valutazione": 5,
+        "Recensione": "Un capolavoro che racconta il cambiamento sociale della Sicilia con eleganza. Profondo e malinconico, uno dei miei preferiti."
+    },
+    {
+        "Titolo del libro": "1984",
+        "Autore": "George Orwell",
+        "Username": "futurethinker",
+        "Valutazione": 5,
+        "Recensione": "Un classico distopico essenziale. Orwell descrive un futuro totalitario che sembra tristemente possibile. Scritto magistralmente."
+    },
+    {
+        "Titolo del libro": "Orgoglio e pregiudizio",
+        "Autore": "Jane Austen",
+        "Username": "romance_reader",
+        "Valutazione": 4,
+        "Recensione": "Una storia d'amore e critica sociale intramontabile. Austen scrive con ironia e intelligenza, i personaggi sono affascinanti."
+    },
+    {
+        "Titolo del libro": "Il piccolo principe",
+        "Autore": "Antoine de Saint-Exupéry",
+        "Username": "dreamer_jane",
+        "Valutazione": 5,
+        "Recensione": "Un racconto poetico e profondo che porta a riflettere sulle cose essenziali della vita. Da leggere a qualsiasi età."
+    },
+    {
+        "Titolo del libro": "Fahrenheit 451",
+        "Autore": "Ray Bradbury",
+        "Username": "sci_fi_fan",
+        "Valutazione": 4,
+        "Recensione": "Un romanzo che critica duramente la censura e la società moderna. Bradbury colpisce dritto al cuore con un messaggio forte."
+    },
+    {
+        "Titolo del libro": "L'isola del giorno prima",
+        "Autore": "Umberto Eco",
+        "Username": "historical_buff",
+        "Valutazione": 3,
+        "Recensione": "Un racconto filosofico affascinante ma complesso. La narrazione è lenta ma ricca di dettagli storici e riflessioni."
+    },
+    {
+        "Titolo del libro": "I promessi sposi",
+        "Autore": "Alessandro Manzoni",
+        "Username": "classiclover",
+        "Valutazione": 4,
+        "Recensione": "Un grande classico della letteratura italiana. I temi trattati sono profondi e i personaggi ben sviluppati."
+    },
+    {
+        "Titolo del libro": "Il vecchio e il mare",
+        "Autore": "Ernest Hemingway",
+        "Username": "sea_storyteller",
+        "Valutazione": 5,
+        "Recensione": "Una storia breve ma potente. Hemingway esplora la resilienza umana con uno stile semplice ma incredibilmente efficace."
+    }
+]

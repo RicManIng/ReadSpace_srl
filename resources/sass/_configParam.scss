@@ -1,0 +1,43 @@
+/* parametri per i bottoni */
+$btn_colorUnpressed: rgb(255, 137, 137);
+$btn_colorPressed: rgb(166, 0, 0);
+
+/* parametri testo */
+$txt_size: 1rem;
+$txt_delta: 0.2rem;
+$txt_family: 'Arial', sans-serif;
+
+$txt_stdColor: rgb(85, 0, 0);
+
+/* parametri per bottoni speciali */
+/* Sign Up */
+$btn_sup_colorUnpressed: rgb(156, 156, 156);
+$btn_sup_colorPressed: rgb(74, 74, 74);
+
+/* nav bar */
+$nav_bgColor: rgb(61, 0, 0);
+$navLink_setBgColor: rgb(156, 21, 21);
+$navLink_Pressed: rgb(255, 116, 116);
+
+/* footer */
+$footer_bgColor: rgb(61, 0, 0);
+
+/* contatti */
+$contatti_bgColor: rgba(51, 0, 0, 0.899);
+
+/* login */
+$login_bgColor: rgba(51, 0, 0, 0.899);
+$login_link_bgColor: rgb(102, 102, 255);
+$login_link_bgColorPressed: darkblue;
+
+/* logout */
+$logout_bgColor: rgb(255, 86, 86);
+$logout_bgColorPressed: rgb(82, 0, 0);
+
+/* main */
+$main_bgColor: rgb(254, 197, 197);
+
+/* recensioni */
+$recensioni_bgColor: rgb(255, 194, 194);
+$recensioni_sferaColor: rgb(78, 0, 0);
+

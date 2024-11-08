@@ -1,0 +1,18 @@
+@import "configParam";
+
+* {
+    transition: all 0.5s;
+    font-family: $txt_family;
+    margin: 0px ;
+    padding: 0px;
+}
+
+body::-webkit-scrollbar {
+    display: none; /* Nasconde la scrollbar in Chrome, Safari e Opera */
+}
+
+@for $i from 1 through 6 {
+    h#{7-$i} {
+        font-size: $txt_size + $txt_delta * $i;
+    }
+}

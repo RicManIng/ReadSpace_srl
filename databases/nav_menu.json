@@ -1,0 +1,45 @@
+[
+    {
+        "id": 1,
+        "nome": "Chi siamo",
+        "type": "nav",
+        "link": "home.php",
+        "title": "vai alla home page"
+    },
+    {
+        "id": 2,
+        "nome": "Contattaci",
+        "type": "nav",
+        "link": "contattaci.php",
+        "title": "vai alla pagina di contatto"
+    },
+    {
+        "id": 3,
+        "nome": "Recensioni",
+        "type": "nav",
+        "link": "recensioni.php",
+        "title": "vai alla pagina delle recensioni"
+    },
+    {
+        "id": 4,
+        "nome": "Le mie Recensioni",
+        "type": "nav_personale",
+        "link": "mie_recensioni.php",
+        "title": "vai alla pagina di gestione delle tue recensioni"
+    },
+    {
+        "id": 5,
+        "nome": "Sign Up",
+        "type": "log",
+        "link": "login.php?stato=signup",
+        "title": "vai alla pagina di iscrizione"
+    },
+    {
+        "id": 6,
+        "nome": "Login",
+        "type": "log",
+        "link": "login.php?stato=login",
+        "title": "vai alla pagina di iscrizione"
+    }
+
+]
